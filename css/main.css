@@ -16,7 +16,7 @@
 }
 
 .section-padding {
-  padding: 6em 2em;
+  padding: 4em 2em;
 }
 
 @media (min-width: 768px) {
@@ -379,6 +379,82 @@ body {
           animation: navItemsAnimations 1s both;
 }
 
+.gallery__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Raleway", sans-serif;
+}
+
+.gallery__card {
+  position: relative;
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  -webkit-perspective: 350px;
+          perspective: 350px;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 0 0 3px #b2cfcb;
+          box-shadow: 0 0 3px #b2cfcb;
+  /* border-radius: 15px; */
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.gallery__img--one {
+  background-image: url(../img/Zosiaprofil.JPG);
+}
+
+.gallery__text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px;
+  text-align: center;
+  -webkit-transition: .8s;
+  transition: .8s;
+  opacity: 0;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  color: #b2cfcb;
+  -webkit-box-shadow: 0 0 3px #b2cfcb;
+          box-shadow: 0 0 3px #b2cfcb;
+  text-shadow: 0 0 3px white;
+}
+
+.gallery__title {
+  margin-top: calc(50% - 8px);
+  text-transform: uppercase;
+  border-radius: 15px;
+}
+
+.gallery__card:hover .gallery__text {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  opacity: 1;
+}
+
+.gallery__card:hover .gallery__img {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  opacity: 0.2;
+}
+
 @media (min-width: 992px) {
   .logo img {
     position: fixed;
@@ -401,9 +477,6 @@ body {
   }
   .about-me__box-text {
     padding: 3em;
-  }
-  .about-me__title {
-    font-size: 2.4rem;
   }
   .about-me__text {
     font-size: 2rem;
