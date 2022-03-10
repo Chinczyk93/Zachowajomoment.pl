@@ -4,6 +4,40 @@
   max-width: 1200px;
 }
 
+.btn-special-animation {
+  position: relative;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn-special-animation::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  z-index: -1;
+}
+
+.btn-special-animation:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
 .section-heading {
   position: relative;
   margin-bottom: 2em;
@@ -16,7 +50,7 @@
 }
 
 .section-padding {
-  padding: 4em 2em;
+  padding: 2em 2em;
 }
 
 @media (min-width: 768px) {
@@ -24,7 +58,7 @@
     font-size: 3.6rem;
   }
   .section-padding {
-    padding: 8em 2em;
+    padding: 4em 2em;
   }
 }
 
@@ -33,7 +67,7 @@
     font-size: 4.8rem;
   }
   .section-padding {
-    padding: 10em 2em;
+    padding: 5em 2em;
   }
 }
 
@@ -342,14 +376,35 @@ body {
 }
 
 .about-me__title {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   text-align: center;
+  font-family: "Old Standard TT", serif;
   color: #b2cfcb;
+  font-style: italic;
   padding-bottom: 1em;
 }
 
 .about-me__text {
   padding-bottom: 0.5em;
   color: #b2cfcb;
+}
+
+.about-me__btn {
+  margin: 1em auto 0;
+  padding: 0.5em;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  background-color: #b2cfcb;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.about-me__btn::before {
+  background-color: #88c0b8;
 }
 
 @-webkit-keyframes navItemsAnimations {
@@ -415,7 +470,39 @@ body {
 }
 
 .gallery__img--one {
-  background-image: url(../img/Zosiaprofil.JPG);
+  background-image: url(../img/galeria-main/slubne.jpg);
+}
+
+.gallery__img--two {
+  background-image: url(../img/galeria-main/narzeczenskie.jpg);
+}
+
+.gallery__img--three {
+  background-image: url(../img/galeria-main/w-parze.jpg);
+}
+
+.gallery__img--four {
+  background-image: url(../img/galeria-main/kobiece.jpg);
+}
+
+.gallery__img--five {
+  background-image: url(../img/galeria-main/rodzinne.jpg);
+}
+
+.gallery__img--six {
+  background-image: url(../img/galeria-main/biznes.jpg);
+}
+
+.gallery__img--seven {
+  background-image: url(../img/galeria-main/okolicznosciowe.jpg);
+}
+
+.gallery__img--eight {
+  background-image: url(../img/galeria-main/wizerunkowa.jpg);
+}
+
+.gallery__img--nine {
+  background-image: url(../img/galeria-main/beauty.jpg);
 }
 
 .gallery__text {
@@ -431,16 +518,15 @@ body {
   opacity: 0;
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
-  color: #b2cfcb;
+  color: #2e2e2e;
   -webkit-box-shadow: 0 0 3px #b2cfcb;
           box-shadow: 0 0 3px #b2cfcb;
-  text-shadow: 0 0 3px white;
+  text-shadow: 0 0 3px #fff;
 }
 
 .gallery__title {
   margin-top: calc(50% - 8px);
   text-transform: uppercase;
-  border-radius: 15px;
 }
 
 .gallery__card:hover .gallery__text {
@@ -477,6 +563,9 @@ body {
   }
   .about-me__box-text {
     padding: 3em;
+  }
+  .about-me__title {
+    font-size: 2.4rem;
   }
   .about-me__text {
     font-size: 2rem;

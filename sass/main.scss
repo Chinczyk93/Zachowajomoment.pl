@@ -105,7 +105,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $p $pure-re-white;
+  background-color: $pure-white;
   transform: translateX(100%);
   transition: transform .5s;
   height: 100vh;
@@ -274,8 +274,11 @@ body {
 
 
   &__title {
+    align-self: flex-start;
     text-align: center;
+    font-family: $secondary-font;
     color: $main-color;
+    font-style: italic;
     padding-bottom: 1em;
   }
 
@@ -283,6 +286,25 @@ body {
     padding-bottom: 0.5em;
     color: $main-color;
   }
+
+  &__btn {
+    margin: 1em auto 0;
+    padding: 0.5em;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    color: $pure-white;
+    border: none;
+    background-color: $main-color;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &::before {
+      background-color: $secondary-color;
+    }
+  }
+
+
 
   @keyframes navItemsAnimations {
     from {
@@ -328,7 +350,39 @@ body {
     transition: .8s;
 
     &--one {
-      background-image: url(../img/Zosiaprofil.JPG);
+      background-image: url(../img/galeria-main/slubne.jpg);
+    }
+
+    &--two {
+      background-image: url(../img/galeria-main/narzeczenskie.jpg);
+    }
+
+    &--three {
+      background-image: url(../img/galeria-main/w-parze.jpg);
+    }
+
+    &--four {
+      background-image: url(../img/galeria-main/kobiece.jpg);
+    }
+
+    &--five {
+      background-image: url(../img/galeria-main/rodzinne.jpg);
+    }
+
+    &--six {
+      background-image: url(../img/galeria-main/biznes.jpg);
+    }
+
+    &--seven {
+      background-image: url(../img/galeria-main/okolicznosciowe.jpg);
+    }
+
+    &--eight {
+      background-image: url(../img/galeria-main/wizerunkowa.jpg);
+    }
+
+    &--nine {
+      background-image: url(../img/galeria-main/beauty.jpg);
     }
   }
 
@@ -344,7 +398,7 @@ body {
     transition: .8s;
     opacity: 0;
     transform: rotateY(-180deg);
-    color: rgb(178, 207, 203);
+    color: $dark;
     box-shadow: 0 0 3px $main-color;
     text-shadow: 0 0 3px $pure-white;
 
@@ -353,7 +407,6 @@ body {
   &__title {
     margin-top: calc(50% - 8px);
     text-transform: uppercase;
-    border-radius: 15px;
   }
 
 
@@ -400,6 +453,10 @@ body {
       &-text {
         padding: 3em;
       }
+    }
+
+    &__title {
+      font-size: 2.4rem;
     }
 
     &__text {
