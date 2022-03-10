@@ -553,6 +553,65 @@ body {
   opacity: 0.2;
 }
 
+.contact {
+  position: relative;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+.contact__form, .contact__form-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__form-label {
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  color: #b2cfcb;
+}
+
+.contact__form-input {
+  margin-bottom: 2em;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+}
+
+.contact__form-textarea {
+  margin-bottom: 2em;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  min-height: 150px;
+}
+
+.contact__form-btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 1em;
+  width: 100%;
+  max-width: 300px;
+  color: #fff;
+  border: none;
+  background-color: #b2cfcb;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact__form-btn::before {
+  background-color: #88c0b8;
+}
+
 @media (min-width: 992px) {
   .logo img {
     position: fixed;

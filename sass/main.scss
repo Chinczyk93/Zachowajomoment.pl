@@ -416,9 +416,6 @@ body {
       background-color: $secondary-color;
     }
   }
-
-
-
 }
 
 .gallery__card:hover .gallery__text {
@@ -429,6 +426,56 @@ body {
 .gallery__card:hover .gallery__img {
   transform: rotateY(-180deg);
   opacity: 0.2;
+}
+
+//Contact
+
+.contact {
+  position: relative;
+  background-color: $light-white;
+  overflow: hidden;
+
+
+  &__form,
+  &__form-top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-label {
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    color: $main-color;
+  }
+
+  &__form-input {
+    @include contactForm;
+  }
+
+  &__form-textarea {
+    @include contactForm;
+
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    min-height: 150px;
+  }
+
+  &__form-btn {
+    align-self: flex-end;
+    padding: 1em;
+    width: 100%;
+    max-width: 300px;
+    color: $pure-white;
+    border: none;
+    background-color: $main-color;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &::before {
+      background-color: $secondary-color;
+    }
+  }
 }
 
 
