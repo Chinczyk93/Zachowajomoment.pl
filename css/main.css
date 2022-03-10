@@ -371,8 +371,8 @@ body {
 }
 
 .about-me__img {
-  -webkit-box-shadow: 0 0 3px #b2cfcb;
-          box-shadow: 0 0 3px #b2cfcb;
+  -webkit-box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
+          box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
 }
 
 .about-me__title {
@@ -462,8 +462,8 @@ body {
   height: 100%;
   background-position: center;
   background-size: cover;
-  -webkit-box-shadow: 0 0 3px #b2cfcb;
-          box-shadow: 0 0 3px #b2cfcb;
+  -webkit-box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
+          box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
   /* border-radius: 15px; */
   -webkit-transition: .8s;
   transition: .8s;
@@ -662,6 +662,190 @@ body {
 
 .contact__form-btn::before {
   background-color: #88c0b8;
+}
+
+.footer {
+  color: #b2cfcb;
+  background-color: #eee;
+}
+
+.footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1em 0.5em 1em;
+}
+
+.footer__logo {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 3em;
+}
+
+.footer__boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__box {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  font-size: 1.4rem;
+  margin: 0 2em;
+  width: 50%;
+}
+
+.footer__box:first-child {
+  -ms-flex-preferred-size: 72%;
+      flex-basis: 72%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+.footer__box-title {
+  padding-top: 1em;
+  margin-bottom: 1em;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.footer__box-list {
+  list-style: none;
+}
+
+.footer__box-list-item {
+  margin-bottom: 1em;
+}
+
+.footer__box-list-item a {
+  color: #b2cfcb;
+  text-decoration: none;
+}
+
+.footer__img {
+  width: 98px;
+  height: 98px;
+  margin: 1px;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer__img--one {
+  background-image: url(../img/galeria-main/slubne.jpg);
+}
+
+.footer__img--two {
+  background-image: url(../img/galeria-main/narzeczenskie.jpg);
+}
+
+.footer__img--three {
+  background-image: url(../img/galeria-main/w-parze.jpg);
+}
+
+.footer__img--four {
+  background-image: url(../img/galeria-main/kobiece.jpg);
+}
+
+.footer__img--five {
+  background-image: url(../img/galeria-main/rodzinne.jpg);
+}
+
+.footer__img--six {
+  background-image: url(../img/galeria-main/biznes.jpg);
+}
+
+.footer__img--seven {
+  background-image: url(../img/galeria-main/okolicznosciowe.jpg);
+}
+
+.footer__img--eight {
+  background-image: url(../img/galeria-main/wizerunkowa.jpg);
+}
+
+.footer__img--nine {
+  background-image: url(../img/galeria-main/rodzinne.jpg);
+}
+
+.footer__img--ten {
+  background-image: url(../img/galeria-main/w-parze.jpg);
+}
+
+.footer__img--eleven {
+  background-image: url(../img/galeria-main/kobiece.jpg);
+}
+
+.footer__img--twelve {
+  background-image: url(../img/galeria-main/wizerunkowa.jpg);
+}
+
+.footer__img--thirteen {
+  background-image: url(../img/galeria-main/slubne.jpg);
+}
+
+.footer__img--fourteen {
+  background-image: url(../img/galeria-main/kobiece.jpg);
+}
+
+.footer__bottom-text {
+  padding: 2em;
+  text-align: center;
+}
+
+.footer__btn {
+  position: absolute;
+  padding: 0.5em 1.5em;
+  bottom: -10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #b2cfcb;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.footer__btn::before {
+  background-color: #88c0b8;
+}
+
+@media (min-width: 768px) {
+  .footer__box {
+    margin: 0 2em;
+    width: 50%;
+  }
+  .footer__box-title {
+    font-size: 2.4rem;
+  }
+  .footer__box-link {
+    padding: 0 .3em;
+    font-size: 2.6rem;
+  }
+  .footer__box-link:hover {
+    color: #88c0b8;
+  }
 }
 
 @media (min-width: 992px) {

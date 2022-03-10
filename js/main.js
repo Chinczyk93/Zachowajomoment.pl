@@ -6,6 +6,7 @@ const navDesktop = document.querySelector('.nav--desktop');
 const navItemDesktop = document.querySelectorAll('.nav__item--desktop');
 const logo = document.querySelector(".logo__img")
 const allSections = document.querySelectorAll('.section');
+const footerYear = document.querySelector('.footer__year');
 
 const handleNav = () => {
   nav.classList.toggle('nav--active')
@@ -91,5 +92,11 @@ const handleObserver = () => {
     }
   })
   }
+
+  function handleCurrentYear() {
+    const year = (new Date).getFullYear();
+    footerYear.innerText = year;
+  }
+  handleCurrentYear();
 
   window.addEventListener('scroll', handleObserver);

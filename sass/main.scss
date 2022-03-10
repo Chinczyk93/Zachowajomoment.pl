@@ -268,7 +268,7 @@ body {
   }
 
   &__img {
-    box-shadow: 0 0 3px $main-color;
+    box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
 
   }
 
@@ -345,7 +345,7 @@ body {
     height: 100%;
     background-position: center;
     background-size: cover;
-    box-shadow: 0 0 3px $main-color;
+    box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
     /* border-radius: 15px; */
     transition: .8s;
 
@@ -527,11 +527,185 @@ body {
   }
 }
 
+//Footer
+
+.footer {
+  color: $main-color;
+  background-color: $light-white;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0.5em 1em;
+  }
+
+  &__logo {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 3em;
+  }
+
+  &__boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+  }
+
+  &__box {
+    flex-basis: 30%;
+    font-size: 1.4rem;
+    margin: 0 2em;
+    width: 50%;
+
+    &:first-child {
+      flex-basis: 72%;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 2em;
+      margin-bottom: 2em;
+    }
+
+
+    &-title {
+      padding-top: 1em;
+      margin-bottom: 1em;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+    }
+
+    &-list {
+      list-style: none;
+
+      &-item {
+        margin-bottom: 1em;
+
+        a {
+          color: $main-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__img {
+    width: 98px;
+    height: 98px;
+    margin: 1px;
+    background-position: center;
+    background-size: cover;
+
+    &--one {
+      background-image: url(../img/galeria-main/slubne.jpg);
+    }
+
+    &--two {
+      background-image: url(../img/galeria-main/narzeczenskie.jpg);
+    }
+
+    &--three {
+      background-image: url(../img/galeria-main/w-parze.jpg);
+    }
+
+    &--four {
+      background-image: url(../img/galeria-main/kobiece.jpg);
+    }
+
+    &--five {
+      background-image: url(../img/galeria-main/rodzinne.jpg);
+    }
+
+    &--six {
+      background-image: url(../img/galeria-main/biznes.jpg);
+    }
+
+    &--seven {
+      background-image: url(../img/galeria-main/okolicznosciowe.jpg);
+    }
+
+    &--eight {
+      background-image: url(../img/galeria-main/wizerunkowa.jpg);
+    }
+
+    &--nine {
+      background-image: url(../img/galeria-main/rodzinne.jpg);
+    }
+
+    &--ten {
+      background-image: url(../img/galeria-main/w-parze.jpg);
+    }
+
+    &--eleven {
+      background-image: url(../img/galeria-main/kobiece.jpg);
+    }
+
+    &--twelve {
+      background-image: url(../img/galeria-main/wizerunkowa.jpg);
+    }
+
+    &--thirteen {
+      background-image: url(../img/galeria-main/slubne.jpg);
+    }
+
+    &--fourteen {
+      background-image: url(../img/galeria-main/kobiece.jpg);
+    }
+  }
+
+  &__bottom-text {
+    padding: 2em;
+    text-align: center;
+  }
+
+  &__btn {
+    position: absolute;
+    padding: 0.5em 1.5em;
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // text-transform: uppercase;
+    background-color: $main-color;
+    color: $pure-white;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+
+    &::before {
+      background-color: $secondary-color;
+    }
+  }
+}
+
 
 
 // ==================================
 //Media
 // ==================================
+@media(min-width: 768px) {
+  .footer {
+
+    &__box {
+      margin: 0 2em;
+      width: 50%;
+
+      &-title {
+        font-size: 2.4rem;
+      }
+
+      &-link {
+        padding: 0 .3em;
+        font-size: 2.6rem;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
 
 @media(min-width: 992px) {
   .logo {
