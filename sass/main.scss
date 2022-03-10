@@ -400,13 +400,21 @@ body {
     transform: rotateY(-180deg);
     color: $dark;
     box-shadow: 0 0 3px $main-color;
-    text-shadow: 0 0 3px $pure-white;
+    // text-shadow: 0 0 3px $pure-white;
 
   }
 
   &__title {
     margin-top: calc(50% - 8px);
     text-transform: uppercase;
+  }
+
+  &__btn {
+    @include galleryBtn;
+
+    &::before {
+      background-color: $secondary-color;
+    }
   }
 
 

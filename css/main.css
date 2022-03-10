@@ -521,12 +521,24 @@ body {
   color: #2e2e2e;
   -webkit-box-shadow: 0 0 3px #b2cfcb;
           box-shadow: 0 0 3px #b2cfcb;
-  text-shadow: 0 0 3px #fff;
 }
 
 .gallery__title {
   margin-top: calc(50% - 8px);
   text-transform: uppercase;
+}
+
+.gallery__btn {
+  margin-top: calc(50% - 8px);
+  padding: 0.5em;
+  background-color: #b2cfcb;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.gallery__btn::before {
+  background-color: #88c0b8;
 }
 
 .gallery__card:hover .gallery__text {

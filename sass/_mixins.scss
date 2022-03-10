@@ -6,3 +6,13 @@
   background-color: $pure-white;
   transition: width .3s;
 }
+
+@mixin galleryBtn {
+  margin-top: calc(50% - 8px);
+  padding: 0.5em;
+  // text-transform: uppercase;
+  background-color: $main-color;
+  color: $pure-white;
+  border-radius: 8px;
+  cursor: pointer;
+}
