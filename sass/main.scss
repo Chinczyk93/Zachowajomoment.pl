@@ -136,6 +136,13 @@ body {
     padding-bottom: 30px;
   }
 
+  &__img {
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 150px;
+  }
+
   &__item {
     position: relative;
     display: block;
@@ -145,6 +152,8 @@ body {
     color: $main-color;
     font-weight: 300;
     text-decoration: none;
+
+
 
     &--desktop {
       position: relative;
@@ -200,8 +209,6 @@ body {
 
     }
 
-
-
     &::before {
       position: absolute;
       content: '';
@@ -217,8 +224,30 @@ body {
     &:hover::before {
       transform: scaleY(1);
     }
+
+    &--logo {
+      padding: 0.5em 1em;
+
+      &:hover::before {
+        transform: scaleY(0);
+      }
+    }
   }
 
+}
+
+@keyframes navItemsAnimations {
+  from {
+    transform: translateX(200%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.nav-items-animation {
+  animation: navItemsAnimations 1s both;
 }
 
 //header
@@ -229,22 +258,30 @@ body {
   background-size: cover;
   background-position: center;
   transition: background-image 1s;
-
+  // transform: translateX(100%);
 }
 
-@keyframes headerAnimation {
-  from {
-    transform: translateX(200%);
-  }
+// @keyframes headerAnimation {
+//   0% {
+//     transform: translateX(200%);
+//   }
 
-  to {
-    transform: translateX(0);
-  }
-}
+//   20% {
+//     transform: translateX(0);
+//   }
 
-.header-animation {
-  animation: headerAnimation 1s both;
-}
+//   80% {
+//     transform: translateX(0);
+//   }
+
+//   100% {
+//     transform: translateX(-200%);
+//   }
+// }
+
+// .header-animation {
+//   animation: headerAnimation 10s infinite;
+// }
 
 
 //About-me
@@ -302,22 +339,6 @@ body {
     &::before {
       background-color: $secondary-color;
     }
-  }
-
-
-
-  @keyframes navItemsAnimations {
-    from {
-      transform: translateX(200%);
-    }
-
-    to {
-      transform: translateX(0);
-    }
-  }
-
-  .nav-items-animation {
-    animation: navItemsAnimations 1s both;
   }
 }
 

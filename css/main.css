@@ -226,6 +226,13 @@ body {
   padding-bottom: 30px;
 }
 
+.nav__img {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+
 .nav__item {
   position: relative;
   display: block;
@@ -309,6 +316,42 @@ body {
           transform: scaleY(1);
 }
 
+.nav__item--logo {
+  padding: 0.5em 1em;
+}
+
+.nav__item--logo:hover::before {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+@-webkit-keyframes navItemsAnimations {
+  from {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes navItemsAnimations {
+  from {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.nav-items-animation {
+  -webkit-animation: navItemsAnimations 1s both;
+          animation: navItemsAnimations 1s both;
+}
+
 .header {
   height: 100vh;
   background-image: url(../img/slider1.jpg);
@@ -316,33 +359,6 @@ body {
   background-position: center;
   -webkit-transition: background-image 1s;
   transition: background-image 1s;
-}
-
-@-webkit-keyframes headerAnimation {
-  from {
-    -webkit-transform: translateX(200%);
-            transform: translateX(200%);
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes headerAnimation {
-  from {
-    -webkit-transform: translateX(200%);
-            transform: translateX(200%);
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-.header-animation {
-  -webkit-animation: headerAnimation 1s both;
-          animation: headerAnimation 1s both;
 }
 
 .about-me__box {
@@ -405,33 +421,6 @@ body {
 
 .about-me__btn::before {
   background-color: #88c0b8;
-}
-
-@-webkit-keyframes navItemsAnimations {
-  from {
-    -webkit-transform: translateX(200%);
-            transform: translateX(200%);
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes navItemsAnimations {
-  from {
-    -webkit-transform: translateX(200%);
-            transform: translateX(200%);
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-.about-me .nav-items-animation {
-  -webkit-animation: navItemsAnimations 1s both;
-          animation: navItemsAnimations 1s both;
 }
 
 .gallery__box {
