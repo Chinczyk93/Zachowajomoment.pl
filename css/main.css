@@ -394,16 +394,23 @@ body {
 .about-me__title {
   -ms-flex-item-align: start;
       align-self: flex-start;
+  padding-bottom: 1em;
   text-align: center;
   font-family: "Old Standard TT", serif;
   color: #b2cfcb;
   font-style: italic;
-  padding-bottom: 1em;
+  letter-spacing: 0.5px;
 }
 
 .about-me__text {
   padding-bottom: 0.5em;
   color: #b2cfcb;
+  letter-spacing: 0.5px;
+}
+
+.about-me__text a {
+  color: #b2cfcb;
+  text-decoration: none;
 }
 
 .about-me__btn {
@@ -523,6 +530,7 @@ body {
   background-color: #b2cfcb;
   color: #fff;
   border-radius: 8px;
+  letter-spacing: 1px;
   cursor: pointer;
 }
 
@@ -599,6 +607,8 @@ body {
   background-color: #fff;
   overflow: hidden;
   padding-top: 6em;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .contact__form, .contact__form-top {
@@ -614,6 +624,7 @@ body {
 .contact__form-label {
   margin-bottom: 0.5em;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
   color: #b2cfcb;
 }
 
@@ -661,6 +672,7 @@ body {
   border: none;
   background-color: #b2cfcb;
   border-radius: 8px;
+  letter-spacing: 1px;
   cursor: pointer;
 }
 
@@ -673,6 +685,8 @@ body {
   padding: 2em;
   font-size: 2rem;
   text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 30px;
 }
 
 .footer {
@@ -698,12 +712,9 @@ body {
 }
 
 .footer__box {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
   font-size: 1.4rem;
   margin: 0 auto;
   padding: 2em;
-  text-align: center;
 }
 
 .footer__box:first-child {
@@ -887,6 +898,9 @@ body {
   }
   .about-me__text {
     font-size: 2rem;
+  }
+  .footer__box-list-item {
+    font-size: 1.8rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
