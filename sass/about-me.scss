@@ -1,0 +1,27 @@
+@import './colors';
+@import './fonts';
+@import './components';
+@import './mixins';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $main-font;
+  font-size: 1.6rem;
+}
+
+.section {
+  background-color: $pure-white;
+  height: 200vh;
+}

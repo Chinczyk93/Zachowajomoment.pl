@@ -596,8 +596,9 @@ body {
 
 .contact {
   position: relative;
-  background-color: #eee;
+  background-color: #fff;
   overflow: hidden;
+  padding-top: 6em;
 }
 
 .contact__form, .contact__form-top {
@@ -620,20 +621,34 @@ body {
   margin-bottom: 2em;
   padding: 0.6em 1.2em;
   border: none;
+  outline: none;
   border-radius: 8px;
   font-size: 1.6rem;
+  background-color: #eee;
+  color: #b2cfcb;
+}
+
+.contact__form-input:focus {
+  border: 1px solid #b2cfcb;
 }
 
 .contact__form-textarea {
   margin-bottom: 2em;
   padding: 0.6em 1.2em;
   border: none;
+  outline: none;
   border-radius: 8px;
   font-size: 1.6rem;
+  background-color: #eee;
+  color: #b2cfcb;
   max-width: 100%;
   min-width: 100%;
   width: 100%;
   min-height: 150px;
+}
+
+.contact__form-textarea:focus {
+  border: 1px solid #b2cfcb;
 }
 
 .contact__form-btn {
@@ -651,6 +666,13 @@ body {
 
 .contact__form-btn::before {
   background-color: #88c0b8;
+}
+
+.contact__text {
+  color: #b2cfcb;
+  padding: 2em;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .footer {

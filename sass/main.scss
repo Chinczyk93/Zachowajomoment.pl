@@ -502,8 +502,9 @@ body {
 
 .contact {
   position: relative;
-  background-color: $light-white;
+  background-color: $pure-white;
   overflow: hidden;
+  padding-top: 6em;
 
 
   &__form,
@@ -520,6 +521,7 @@ body {
 
   &__form-input {
     @include contactForm;
+
   }
 
   &__form-textarea {
@@ -529,6 +531,7 @@ body {
     min-width: 100%;
     width: 100%;
     min-height: 150px;
+
   }
 
   &__form-btn {
@@ -545,6 +548,13 @@ body {
     &::before {
       background-color: $secondary-color;
     }
+  }
+
+  &__text {
+    color: $main-color;
+    padding: 2em;
+    font-size: 2rem;
+    text-align: center;
   }
 }
 
