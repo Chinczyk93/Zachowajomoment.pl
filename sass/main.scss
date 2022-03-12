@@ -253,11 +253,13 @@ body {
 //header
 
 .header {
+  // max-width: 2500px;
   height: 100vh;
   background-image: url(../img/slider/slider1.jpg);
   background-size: cover;
   background-position: center;
   transition: background-image 3s;
+  margin: 0 auto;
   // transform: translateX(100%);
 }
 
@@ -378,39 +380,39 @@ body {
     transition: .8s;
 
     &--one {
-      background-image: url(../img/galeria-main/slubne.jpg);
+      background-image: url(../img/galeria-main/male/slubne.jpg);
     }
 
     &--two {
-      background-image: url(../img/galeria-main/narzeczenskie.jpg);
+      background-image: url(../img/galeria-main/male/narzeczenskie.jpg);
     }
 
     &--three {
-      background-image: url(../img/galeria-main/w-parze.jpg);
+      background-image: url(../img/galeria-main/male/w-parze.jpg);
     }
 
     &--four {
-      background-image: url(../img/galeria-main/kobiece.jpg);
+      background-image: url(../img/galeria-main/male/kobiece.jpg);
     }
 
     &--five {
-      background-image: url(../img/galeria-main/rodzinne.jpg);
+      background-image: url(../img/galeria-main/male/rodzinne.jpg);
     }
 
     &--six {
-      background-image: url(../img/galeria-main/biznes.jpg);
+      background-image: url(../img/galeria-main/male/biznes.jpg);
     }
 
     &--seven {
-      background-image: url(../img/galeria-main/okolicznosciowe.jpg);
+      background-image: url(../img/galeria-main/male/okolicznosciowe.jpg);
     }
 
     &--eight {
-      background-image: url(../img/galeria-main/wizerunkowa.jpg);
+      background-image: url(../img/galeria-main/male/wizerunkowa.jpg);
     }
 
     &--nine {
-      background-image: url(../img/galeria-main/beauty.jpg);
+      background-image: url(../img/galeria-main/male/beauty.jpg);
     }
   }
 
@@ -654,59 +656,59 @@ body {
     background-size: cover;
 
     &--one {
-      background-image: url(../img/galeria-main/slubne.jpg);
+      background-image: url(../img/stopka-instagram/1.jpg);
     }
 
     &--two {
-      background-image: url(../img/galeria-main/narzeczenskie.jpg);
+      background-image: url(../img/stopka-instagram/2.jpg);
     }
 
     &--three {
-      background-image: url(../img/galeria-main/w-parze.jpg);
+      background-image: url(../img/stopka-instagram/3.jpg);
     }
 
     &--four {
-      background-image: url(../img/galeria-main/kobiece.jpg);
+      background-image: url(../img/stopka-instagram/4.jpg);
     }
 
     &--five {
-      background-image: url(../img/galeria-main/rodzinne.jpg);
+      background-image: url(../img/stopka-instagram/5.jpg);
     }
 
     &--six {
-      background-image: url(../img/galeria-main/biznes.jpg);
+      background-image: url(../img/stopka-instagram/6.jpg);
     }
 
     &--seven {
-      background-image: url(../img/galeria-main/okolicznosciowe.jpg);
+      background-image: url(../img/stopka-instagram/7.jpg);
     }
 
     &--eight {
-      background-image: url(../img/galeria-main/wizerunkowa.jpg);
+      background-image: url(../img/stopka-instagram/8.jpg);
     }
 
     &--nine {
-      background-image: url(../img/galeria-main/rodzinne.jpg);
+      background-image: url(../img/stopka-instagram/9.jpg);
     }
 
     &--ten {
-      background-image: url(../img/galeria-main/w-parze.jpg);
+      background-image: url(../img/stopka-instagram/10.jpg);
     }
 
     &--eleven {
-      background-image: url(../img/galeria-main/kobiece.jpg);
+      background-image: url(../img/stopka-instagram/11.jpg);
     }
 
     &--twelve {
-      background-image: url(../img/galeria-main/wizerunkowa.jpg);
+      background-image: url(../img/stopka-instagram/12.jpeg);
     }
 
     &--thirteen {
-      background-image: url(../img/galeria-main/slubne.jpg);
+      background-image: url(../img/stopka-instagram/13.jpg);
     }
 
     &--fourteen {
-      background-image: url(../img/galeria-main/kobiece.jpg);
+      background-image: url(../img/stopka-instagram/14.jpg);
     }
   }
 

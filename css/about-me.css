@@ -101,6 +101,7 @@
 }
 
 .aboutMe__img img {
+  display: block;
   width: 300px;
   height: 300px;
   margin: 1em auto;

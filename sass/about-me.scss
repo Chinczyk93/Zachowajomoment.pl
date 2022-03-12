@@ -29,23 +29,17 @@
 
   &__img {
     img {
-      // display: block;
+      display: block;
       width: 300px;
       height: 300px;
       margin: 1em auto;
     }
-
-
-
   }
-
-
 
   &__title {
     color: $main-color;
     padding: 3em 0 0.5em;
   }
-
 
   &__text {
     color: $dark;
