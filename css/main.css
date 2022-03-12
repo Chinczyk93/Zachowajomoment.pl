@@ -71,6 +71,12 @@
   }
 }
 
+.feather {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
 *,
 *::before,
 *::after {
@@ -611,6 +617,16 @@ body {
   margin: 0 auto;
 }
 
+.contact__feather {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.contact__form {
+  padding: 4em 0 2em;
+}
+
 .contact__form, .contact__form-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -682,10 +698,18 @@ body {
 
 .contact__text {
   color: #b2cfcb;
-  padding: 2em;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
   letter-spacing: 0.5px;
+  line-height: 50px;
+}
+
+.contact__text--top {
+  padding-top: 2em;
+}
+
+.contact__text--bottom {
+  padding-top: 2em;
   line-height: 30px;
 }
 

@@ -3,25 +3,15 @@
 @import './components';
 @import './mixins';
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.wrapper--aboutMe {
+  max-width: 650px;
 }
 
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
+.aboutMe {
+  color: $main-color;
+  padding: 2em 0 1em;
 }
 
-body {
-  font-family: $main-font;
-  font-size: 1.6rem;
-}
-
-.section {
-  background-color: $pure-white;
-  height: 200vh;
+.text {
+  color: $dark;
 }

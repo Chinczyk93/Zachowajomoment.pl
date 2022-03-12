@@ -515,6 +515,15 @@ body {
   max-width: 650px;
   margin: 0 auto;
 
+  &__feather {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  &__form {
+    padding: 4em 0 2em;
+  }
 
   &__form,
   &__form-top {
@@ -563,11 +572,19 @@ body {
 
   &__text {
     color: $main-color;
-    padding: 2em;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
     letter-spacing: 0.5px;
-    line-height: 30px;
+    line-height: 50px;
+
+    &--top {
+      padding-top: 2em;
+    }
+
+    &--bottom {
+      padding-top: 2em;
+      line-height: 30px;
+    }
   }
 }
 
