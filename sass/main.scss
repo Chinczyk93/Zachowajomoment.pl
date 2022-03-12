@@ -254,10 +254,10 @@ body {
 
 .header {
   height: 100vh;
-  background-image: url(../img/slider1.jpg);
+  background-image: url(../img/slider/slider1.jpg);
   background-size: cover;
   background-position: center;
-  transition: background-image 1s;
+  transition: background-image 3s;
   // transform: translateX(100%);
 }
 

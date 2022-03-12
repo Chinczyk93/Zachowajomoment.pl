@@ -26,15 +26,18 @@ const navItemsAnimations = () => {
   })
 }
 
-//slider header
+// slider header
 
 // var i = 0; 
 //   var images = [];
 //   var slideTime = 3000;
 //   const header = document.querySelector('.header');
 
-//   images[0] = '../img/slider1.jpg'
-//   images[1] = '../img/slider2.jpg'
+//   images[0] = 'img/slider/slider1.jpg'
+//   images[2] = 'img/slider/slider3.jpg'
+//   images[1] = 'img/slider/slider2.jpg'
+//   images[3] = 'img/slider/slider4.jpg'
+//   images[4] = 'img/slider/slider5.jpg'
 
 //   function changePicture() {
 //     header.style.backgroundImage = "url(" + images[i] + ")";
@@ -53,7 +56,7 @@ const navItemsAnimations = () => {
 const whiteStrap = () => {
   const currentSection = window.scrollY;
   
-  if(currentSection >= 100){
+  if(currentSection >= 100 || section.classList.contains('white-section')){
 navDesktop.style.backgroundColor = "white";
 logo.src = "img/Logo/zachowajmoment-mieta.png";
 logo.style.top = " -26px";

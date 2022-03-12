@@ -74,7 +74,7 @@
 .feather {
   width: 200px;
   height: 200px;
-  margin: 0 auto;
+  margin: 0 auto 4em;
 }
 
 *,
@@ -360,11 +360,11 @@ body {
 
 .header {
   height: 100vh;
-  background-image: url(../img/slider1.jpg);
+  background-image: url(../img/slider/slider1.jpg);
   background-size: cover;
   background-position: center;
-  -webkit-transition: background-image 1s;
-  transition: background-image 1s;
+  -webkit-transition: background-image 3s;
+  transition: background-image 3s;
 }
 
 .about-me__box {

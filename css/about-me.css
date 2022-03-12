@@ -74,19 +74,64 @@
 .feather {
   width: 200px;
   height: 200px;
-  margin: 0 auto;
+  margin: 0 auto 4em;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper--aboutMe {
-  max-width: 650px;
+  max-width: 900px;
 }
 
-.aboutMe {
+.aboutMe__card--two {
+  margin-top: 0;
+}
+
+.aboutMe__img img {
+  width: 300px;
+  height: 300px;
+}
+
+.aboutMe__img--one img {
+  margin: 5em 1em 1em 0em;
+  float: left;
+}
+
+.aboutMe__img--two img {
+  float: right;
+  margin: 1em 0 1em 1em;
+}
+
+.aboutMe__img--three img {
+  margin: 5em 1em 1em 0em;
+  float: left;
+}
+
+.aboutMe__img--four img {
+  margin: 1em 0 1em 1em;
+  float: right;
+}
+
+.aboutMe__img--five img {
+  margin: 4em 1em 1em 0;
+  float: left;
+}
+
+.aboutMe__title {
   color: #b2cfcb;
-  padding: 2em 0 1em;
+  padding: 3em 0 0.5em;
 }
 
-.text {
+.aboutMe__text {
   color: #2e2e2e;
+  letter-spacing: 0.5px;
+  line-height: 25px;
 }
 /*# sourceMappingURL=about-me.css.map */
