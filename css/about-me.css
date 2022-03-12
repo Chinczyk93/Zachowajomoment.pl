@@ -88,6 +88,12 @@
 
 .wrapper--aboutMe {
   max-width: 900px;
+  margin: 0 auto;
+}
+
+.aboutMe__card {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .aboutMe__card--two {
@@ -97,31 +103,7 @@
 .aboutMe__img img {
   width: 300px;
   height: 300px;
-}
-
-.aboutMe__img--one img {
-  margin: 5em 1em 1em 0em;
-  float: left;
-}
-
-.aboutMe__img--two img {
-  float: right;
-  margin: 1em 0 1em 1em;
-}
-
-.aboutMe__img--three img {
-  margin: 5em 1em 1em 0em;
-  float: left;
-}
-
-.aboutMe__img--four img {
-  margin: 1em 0 1em 1em;
-  float: right;
-}
-
-.aboutMe__img--five img {
-  margin: 4em 1em 1em 0;
-  float: left;
+  margin: 1em auto;
 }
 
 .aboutMe__title {
@@ -133,5 +115,38 @@
   color: #2e2e2e;
   letter-spacing: 0.5px;
   line-height: 25px;
+}
+
+@media (min-width: 992px) {
+  .aboutMe__card {
+    max-width: 900px;
+  }
+  .aboutMe__img--one img {
+    margin: 5em 1em 1em 0em;
+    float: left;
+  }
+  .aboutMe__img--two img {
+    float: right;
+    margin: 1em 0 1em 1em;
+  }
+  .aboutMe__img--three img {
+    margin: 5em 1em 1em 0em;
+    float: left;
+  }
+  .aboutMe__img--four img {
+    margin: 1em 0 1em 1em;
+    float: right;
+  }
+  .aboutMe__img--five img {
+    margin: 4em 1em 1em 0;
+    float: left;
+  }
+  .aboutMe__img--six img {
+    margin: 2em 0 0;
+    float: right;
+  }
+  .footer {
+    margin-top: 6em;
+  }
 }
 /*# sourceMappingURL=about-me.css.map */
