@@ -715,7 +715,7 @@ body {
 }
 
 .offer__title {
-  margin-bottom: 1em;
+  margin: 2em 0;
   text-align: center;
   text-transform: uppercase;
   font-size: 2rem;
@@ -723,13 +723,28 @@ body {
 }
 
 .offer__text {
-  text-align: center;
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: justify;
   letter-spacing: .5px;
   color: #2e2e2e;
 }
 
 .offer__text--bottom {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  color: #a0a0a0;
+}
+
+.offer__text--margin {
+  margin-bottom: 1em;
+}
+
+.offer__text--center {
+  text-align: center;
+}
+
+.offer__text--mint {
+  color: #b2cfcb;
 }
 
 .offer__cards {
@@ -777,6 +792,7 @@ body {
 }
 
 .offer__card .title {
+  position: relative;
   margin-bottom: 1em;
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -786,7 +802,10 @@ body {
 
 .offer__card .text {
   line-height: 20px;
-  margin-bottom: 1em;
+}
+
+.offer__card .text--margin {
+  margin-top: 1em;
 }
 
 .offer__card .price {

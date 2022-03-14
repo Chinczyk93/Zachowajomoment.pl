@@ -594,7 +594,7 @@ body {
 //=================================================
 .offer {
   &__title {
-    margin-bottom: 1em;
+    margin: 2em 0;
     text-align: center;
     text-transform: uppercase;
     font-size: 2rem;
@@ -602,12 +602,27 @@ body {
   }
 
   &__text {
-    text-align: center;
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: justify;
     letter-spacing: .5px;
     color: $dark;
 
     &--bottom {
-      font-size: 1.2rem;
+      font-size: 1.6rem;
+      color: rgb(160, 160, 160);
+    }
+
+    &--margin {
+      margin-bottom: 1em;
+    }
+
+    &--center {
+      text-align: center;
+    }
+
+    &--mint {
+      color: $main-color;
     }
   }
 
@@ -643,6 +658,7 @@ body {
     }
 
     .title {
+      position: relative;
       margin-bottom: 1em;
       font-size: 1.8rem;
       text-transform: uppercase;
@@ -652,7 +668,10 @@ body {
 
     .text {
       line-height: 20px;
-      margin-bottom: 1em;
+
+      &--margin {
+        margin-top: 1em;
+      }
     }
 
     .price {
