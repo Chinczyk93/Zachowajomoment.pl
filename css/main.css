@@ -526,6 +526,10 @@ body {
           box-shadow: 0 0 3px #b2cfcb;
 }
 
+.gallery__text a {
+  text-decoration: none;
+}
+
 .gallery__title {
   margin-top: calc(50% - 8px);
   text-transform: uppercase;
@@ -607,232 +611,6 @@ body {
   margin-bottom: 1em;
   font-size: 1.4rem;
   color: #2e2e2e;
-}
-
-.contact {
-  position: relative;
-  background-color: #fff;
-  overflow: hidden;
-  padding-top: 6em;
-  max-width: 650px;
-  margin: 0 auto;
-}
-
-.contact__feather {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-}
-
-.contact__form {
-  padding: 4em 0 2em;
-}
-
-.contact__form, .contact__form-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.contact__form-label {
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: #b2cfcb;
-}
-
-.contact__form-input {
-  margin-bottom: 2em;
-  padding: 0.6em 1.2em;
-  border: none;
-  outline: none;
-  border-radius: 8px;
-  font-size: 1.6rem;
-  background-color: #eee;
-  color: #b2cfcb;
-}
-
-.contact__form-input:focus {
-  border: 1px solid #b2cfcb;
-}
-
-.contact__form-textarea {
-  margin-bottom: 2em;
-  padding: 0.6em 1.2em;
-  border: none;
-  outline: none;
-  border-radius: 8px;
-  font-size: 1.6rem;
-  background-color: #eee;
-  color: #b2cfcb;
-  max-width: 100%;
-  min-width: 100%;
-  width: 100%;
-  min-height: 150px;
-}
-
-.contact__form-textarea:focus {
-  border: 1px solid #b2cfcb;
-}
-
-.contact__form-btn {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  padding: 1em;
-  width: 100%;
-  max-width: 300px;
-  color: #fff;
-  border: none;
-  background-color: #b2cfcb;
-  border-radius: 8px;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-
-.contact__form-btn::before {
-  background-color: #88c0b8;
-}
-
-.contact__text {
-  color: #b2cfcb;
-  font-size: 1.8rem;
-  text-align: center;
-  letter-spacing: 0.5px;
-  line-height: 50px;
-}
-
-.contact__text--top {
-  padding-top: 2em;
-}
-
-.contact__text--bottom {
-  padding-top: 2em;
-  line-height: 30px;
-}
-
-.offer__title {
-  margin: 2em 0;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2rem;
-  color: #b2cfcb;
-}
-
-.offer__text {
-  margin: 0 auto;
-  max-width: 900px;
-  text-align: justify;
-  letter-spacing: .5px;
-  color: #2e2e2e;
-}
-
-.offer__text--bottom {
-  font-size: 1.6rem;
-  color: #a0a0a0;
-}
-
-.offer__text--margin {
-  margin-bottom: 1em;
-}
-
-.offer__text--center {
-  text-align: center;
-}
-
-.offer__text--mint {
-  color: #b2cfcb;
-}
-
-.offer__cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-line-pack: space-evenly;
-      align-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 2em 0 2em;
-}
-
-.offer__card {
-  margin-top: 2em;
-  text-align: center;
-  color: #2e2e2e;
-  padding: 2em;
-  -webkit-box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
-          box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
-}
-
-.offer__card--voucher {
-  margin: 2em auto;
-  max-width: 330px;
-}
-
-.offer__card:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.offer__card:hover .title,
-.offer__card:hover .price {
-  color: #88c0b8;
-}
-
-.offer__card .title {
-  position: relative;
-  margin-bottom: 1em;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #b2cfcb;
-}
-
-.offer__card .text {
-  line-height: 20px;
-}
-
-.offer__card .text--margin {
-  margin-top: 1em;
-}
-
-.offer__card .price {
-  margin-top: 1em;
-  font-size: 1.8rem;
-  color: #b2cfcb;
-}
-
-.offer__btn {
-  margin: 2em auto 0;
-  padding: 0.5em 5em;
-  color: #fff;
-  border: none;
-  background-color: #b2cfcb;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.offer__btn::before {
-  background-color: #88c0b8;
-}
-
-.offer a {
-  display: block;
-  margin: 1em auto;
-  max-width: 300px;
-  text-align: center;
 }
 
 .footer {
@@ -984,6 +762,232 @@ body {
 
 .footer__btn::before {
   background-color: #88c0b8;
+}
+
+.offer__title {
+  margin: 2em 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #b2cfcb;
+}
+
+.offer__text {
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: justify;
+  letter-spacing: .5px;
+  color: #2e2e2e;
+}
+
+.offer__text--bottom {
+  font-size: 1.6rem;
+  color: #a0a0a0;
+}
+
+.offer__text--margin {
+  margin-bottom: 1em;
+}
+
+.offer__text--center {
+  text-align: center;
+}
+
+.offer__text--mint {
+  color: #b2cfcb;
+}
+
+.offer__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2em 0 2em;
+}
+
+.offer__card {
+  margin-top: 2em;
+  text-align: center;
+  color: #2e2e2e;
+  padding: 2em;
+  -webkit-box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
+          box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.offer__card--voucher {
+  margin: 2em auto;
+  max-width: 330px;
+}
+
+.offer__card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.offer__card:hover .title,
+.offer__card:hover .price {
+  color: #88c0b8;
+}
+
+.offer__card .title {
+  position: relative;
+  margin-bottom: 1em;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #b2cfcb;
+}
+
+.offer__card .text {
+  line-height: 20px;
+}
+
+.offer__card .text--margin {
+  margin-top: 1em;
+}
+
+.offer__card .price {
+  margin-top: 1em;
+  font-size: 1.8rem;
+  color: #b2cfcb;
+}
+
+.offer__btn {
+  margin: 2em auto 0;
+  padding: 0.5em 5em;
+  color: #fff;
+  border: none;
+  background-color: #b2cfcb;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.offer__btn::before {
+  background-color: #88c0b8;
+}
+
+.offer a {
+  display: block;
+  margin: 1em auto;
+  max-width: 300px;
+  text-align: center;
+}
+
+.contact {
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  padding-top: 6em;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.contact__feather {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.contact__form {
+  padding: 4em 0 2em;
+}
+
+.contact__form, .contact__form-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__form-label {
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #b2cfcb;
+}
+
+.contact__form-input {
+  margin-bottom: 2em;
+  padding: 0.6em 1.2em;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  background-color: #eee;
+  color: #b2cfcb;
+}
+
+.contact__form-input:focus {
+  border: 1px solid #b2cfcb;
+}
+
+.contact__form-textarea {
+  margin-bottom: 2em;
+  padding: 0.6em 1.2em;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  background-color: #eee;
+  color: #b2cfcb;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  min-height: 150px;
+}
+
+.contact__form-textarea:focus {
+  border: 1px solid #b2cfcb;
+}
+
+.contact__form-btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 1em;
+  width: 100%;
+  max-width: 300px;
+  color: #fff;
+  border: none;
+  background-color: #b2cfcb;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.contact__form-btn::before {
+  background-color: #88c0b8;
+}
+
+.contact__text {
+  color: #b2cfcb;
+  font-size: 1.8rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+}
+
+.contact__text--top {
+  padding-top: 2em;
+}
+
+.contact__text--bottom {
+  padding-top: 2em;
+  line-height: 30px;
 }
 
 @media (min-width: 768px) {

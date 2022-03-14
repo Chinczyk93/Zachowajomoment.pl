@@ -1,0 +1,98 @@
+@import './colors';
+@import './fonts';
+@import './components';
+@import './mixins';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wedding {
+  &__title {
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $main-color;
+  }
+
+  &__boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+  }
+
+  &__box {
+    margin: 2em;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 1.8rem;
+    color: $main-color;
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__img {
+    margin: .5em;
+
+    img {
+      height: 450px;
+    }
+  }
+
+  &__btn {
+    margin: 2em auto 0;
+    padding: 0.5em 5em;
+    color: $pure-white;
+    border: none;
+    background-color: $main-color;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &::before {
+      background-color: $secondary-color;
+    }
+  }
+
+  a {
+    display: block;
+    margin: 1em auto;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .arrow-back {
+    text-decoration: none;
+    position: fixed;
+    top: 8vh;
+    left: 15vw;
+  }
+
+  i {
+    color: $main-color;
+    text-decoration: none;
+  }
+
+}
+
+//=============================
+//Media
+
+@media(min-width: 992px) {
+  .arrow-back {
+    font-size: 2rem;
+  }
+}
