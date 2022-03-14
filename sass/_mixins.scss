@@ -32,3 +32,7 @@
     border: 1px solid $main-color;
   }
 }
+
+@mixin shadow {
+  box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
+}

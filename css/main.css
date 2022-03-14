@@ -714,6 +714,108 @@ body {
   line-height: 30px;
 }
 
+.offer__title {
+  margin-bottom: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #b2cfcb;
+}
+
+.offer__text {
+  text-align: center;
+  letter-spacing: .5px;
+  color: #2e2e2e;
+}
+
+.offer__text--bottom {
+  font-size: 1.2rem;
+}
+
+.offer__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2em 0 2em;
+}
+
+.offer__card {
+  margin-top: 2em;
+  text-align: center;
+  color: #2e2e2e;
+  padding: 2em;
+  -webkit-box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
+          box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.offer__card--voucher {
+  margin: 2em auto;
+  max-width: 330px;
+}
+
+.offer__card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.offer__card:hover .title,
+.offer__card:hover .price {
+  color: #88c0b8;
+}
+
+.offer__card .title {
+  margin-bottom: 1em;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #b2cfcb;
+}
+
+.offer__card .text {
+  line-height: 20px;
+  margin-bottom: 1em;
+}
+
+.offer__card .price {
+  margin-top: 1em;
+  font-size: 1.8rem;
+  color: #b2cfcb;
+}
+
+.offer__btn {
+  margin: 2em auto 0;
+  padding: 0.5em 5em;
+  color: #fff;
+  border: none;
+  background-color: #b2cfcb;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.offer__btn::before {
+  background-color: #88c0b8;
+}
+
+.offer a {
+  display: block;
+  margin: 1em auto;
+  max-width: 300px;
+  text-align: center;
+}
+
 .footer {
   color: #b2cfcb;
   background-color: #eee;
@@ -926,6 +1028,13 @@ body {
   }
   .footer__box-list-item {
     font-size: 1.8rem;
+  }
+  .offer__title {
+    font-size: 2.2rem;
+  }
+  .offer__card .title,
+  .offer__card .price {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
