@@ -86,7 +86,7 @@
   padding: 0;
 }
 
-.wedding__title {
+.portfolio__title {
   margin-bottom: 1em;
   text-align: center;
   font-size: 2rem;
@@ -94,7 +94,7 @@
   color: #b2cfcb;
 }
 
-.wedding__boxes {
+.portfolio__boxes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,17 +111,18 @@
   padding: 2em;
 }
 
-.wedding__box {
+.portfolio__box {
   margin: 2em;
 }
 
-.wedding__text {
+.portfolio__text {
   text-align: center;
   font-size: 1.8rem;
   color: #b2cfcb;
+  margin-bottom: 1em;
 }
 
-.wedding__images {
+.portfolio__images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,15 +137,15 @@
           justify-content: center;
 }
 
-.wedding__img {
+.portfolio__img {
   margin: .5em;
 }
 
-.wedding__img img {
+.portfolio__img img {
   height: 450px;
 }
 
-.wedding__btn {
+.portfolio__btn {
   margin: 2em auto 0;
   padding: 0.5em 5em;
   color: #fff;
@@ -154,25 +155,25 @@
   cursor: pointer;
 }
 
-.wedding__btn::before {
+.portfolio__btn::before {
   background-color: #88c0b8;
 }
 
-.wedding a {
+.portfolio a {
   display: block;
   margin: 1em auto;
   max-width: 300px;
   text-align: center;
 }
 
-.wedding .arrow-back {
+.portfolio .arrow-back {
   text-decoration: none;
   position: fixed;
-  top: 8vh;
+  top: 8vw;
   left: 15vw;
 }
 
-.wedding i {
+.portfolio i {
   color: #b2cfcb;
   text-decoration: none;
 }

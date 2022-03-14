@@ -11,7 +11,7 @@
   padding: 0;
 }
 
-.wedding {
+.portfolio {
   &__title {
     margin-bottom: 1em;
     text-align: center;
@@ -36,6 +36,7 @@
     text-align: center;
     font-size: 1.8rem;
     color: $main-color;
+    margin-bottom: 1em;
   }
 
   &__images {
@@ -77,7 +78,7 @@
   .arrow-back {
     text-decoration: none;
     position: fixed;
-    top: 8vh;
+    top: 8vw;
     left: 15vw;
   }
 
