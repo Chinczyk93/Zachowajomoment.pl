@@ -354,8 +354,8 @@ body {
 .gallery {
   &__box {
     display: flex;
-    justify-content: space-evenly;
-    align-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     font-family: $main-font;
 
@@ -363,7 +363,7 @@ body {
 
   &__card {
     position: relative;
-    margin: 20px;
+    margin: 0.5em;
     width: 300px;
     height: 300px;
     perspective: 350px;
