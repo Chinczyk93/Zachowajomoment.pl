@@ -54,6 +54,10 @@
     }
   }
 
+  &__horizontal {
+    display: none;
+  }
+
   &__btn {
     margin: 2em auto 0;
     padding: 0.5em 5em;
@@ -95,5 +99,11 @@
 @media(min-width: 992px) {
   .arrow-back {
     font-size: 2rem;
+  }
+
+  .portfolio {
+    &__horizontal {
+      display: block;
+    }
   }
 }
