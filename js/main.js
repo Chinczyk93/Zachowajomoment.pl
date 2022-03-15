@@ -28,34 +28,40 @@ const navItemsAnimations = () => {
 
 // slider header
 
-// let i = 0; 
-//   let images = [];
-//   const slideTime = 3000;
-//   const header = document.querySelector('.header');
+let i = 0; 
+  let images = [];
+  const slideTime = 10000;
+  const header = document.querySelector('.header');
+  const image = document.querySelector('.slider');
 
-//   images[0] = 'img/slider/slider1.jpg'
-//   images[2] = 'img/slider/slider2.jpg'
-//   images[1] = 'img/slider/slider3.jpg'
-//   images[3] = 'img/slider/slider4.jpg'
-//   images[4] = 'img/slider/slider5.jpg'
-//   images[5] = 'img/slider/slider6.jpg'
+  images[0] = 'img/slider/slider1.jpg'
+  images[1] = 'img/slider/slider2.jpg'
+  images[2] = 'img/slider/slider3.jpg'
+  images[3] = 'img/slider/slider4.jpg'
+  images[4] = 'img/slider/slider5.jpg'
+  images[5] = 'img/slider/slider6.jpg'
 
-//   function changePicture() {
-//     header.style.backgroundImage = "url(" + images[i] + ")";
-// i++;
-// //     if(i < images.length -1) {
-// //       i++;
-// // }
-// // else {
-// //   i = 0; 
-// // }
-// if(i === images.length){
-//   i = 0;
+  const changePicture = () => {
+    // header.style.backgroundImage = "url(" + images[i] + ")";
+    image.src = images[i];
+i++;
+//     if(i < images.length -1) {
+//       i++;
 // }
-// setTimeout(changePicture, slideTime);
+// else {
+//   i = 0; 
+// }
+if(i === images.length){
+  i = 0;
+}
+setTimeout(changePicture, slideTime);
 
-//   }
-// window.addEventListener('load', changePicture);
+  }
+window.addEventListener('load', changePicture);
+
+
+
+
 
 //biały pasek 
 const whiteStrap = () => {
