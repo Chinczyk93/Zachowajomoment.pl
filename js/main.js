@@ -61,7 +61,7 @@ const navItemsAnimations = () => {
 const whiteStrap = () => {
   const currentSection = window.scrollY;
   
-  if(currentSection >= 100 || section.classList.contains('white-section')){
+  if(currentSection >= 100){
 navDesktop.style.backgroundColor = "white";
 logo.src = "img/Logo/zachowajmoment-mieta.png";
 logo.style.top = " -26px";

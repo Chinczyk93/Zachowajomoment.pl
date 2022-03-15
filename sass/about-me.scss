@@ -16,6 +16,14 @@
   margin: 0 auto;
 }
 
+.nav--desktop {
+  background-color: $pure-white;
+}
+
+.nav__item--desktop {
+  color: $main-color;
+}
+
 .aboutMe {
 
   &__card {

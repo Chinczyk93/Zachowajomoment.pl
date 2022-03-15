@@ -1,0 +1,14 @@
+@import './colors';
+@import './fonts';
+@import './components';
+@import './mixins';
+
+
+
+.nav--desktop {
+  background-color: $pure-white;
+}
+
+.nav__item--desktop {
+  color: $main-color;
+}
