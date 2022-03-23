@@ -3,6 +3,7 @@ const nav = document.querySelector('.nav');
 const burgerBtn = document.querySelector('.burger-btn');
 const burgerBtnBars = document.querySelector('.burger-btn__bars');
 const navItems = document.querySelectorAll('.nav__item');
+const footerYear = document.querySelector('.footer__year');
 
 
 const handleNav = () => {
@@ -22,3 +23,9 @@ const navItemsAnimations = () => {
     delayTime++;
   })
 }
+
+function handleCurrentYear() {
+  const year = (new Date).getFullYear();
+  footerYear.innerText = year;
+}
+handleCurrentYear();
