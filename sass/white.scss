@@ -12,3 +12,12 @@
 .nav__item--desktop {
   color: $main-color;
 }
+
+.burger-btn {
+
+  &__bars,
+  &__bars::after,
+  &__bars::before {
+    background-color: $main-color;
+  }
+}

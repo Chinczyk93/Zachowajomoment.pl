@@ -84,4 +84,8 @@
 .nav__item--desktop {
   color: #b2cfcb;
 }
+
+.burger-btn__bars, .burger-btn__bars::after, .burger-btn__bars::before {
+  background-color: #b2cfcb;
+}
 /*# sourceMappingURL=white.css.map */
