@@ -163,7 +163,7 @@
   background-color: #88c0b8;
 }
 
-.portfolio a {
+.portfolio__button {
   display: block;
   margin: 1em auto;
   max-width: 300px;
