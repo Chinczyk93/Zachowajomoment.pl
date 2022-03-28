@@ -149,6 +149,10 @@
   display: none;
 }
 
+.portfolio__horizontal img {
+  width: 615px;
+}
+
 .portfolio__btn {
   margin: 2em auto 0;
   padding: 0.5em 5em;
