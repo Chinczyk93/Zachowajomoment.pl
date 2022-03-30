@@ -998,6 +998,10 @@ body {
   line-height: 30px;
 }
 
+.thank {
+  height: 55vh;
+}
+
 @media (min-width: 768px) {
   .footer__boxes {
     display: -webkit-box;
