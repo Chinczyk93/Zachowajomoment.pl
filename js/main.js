@@ -34,12 +34,12 @@ let i = 0;
   const header = document.querySelector('.header');
   const image = document.querySelector('.slider');
 
-  images[0] = 'img/slider/slider1.jpg'
-  images[1] = 'img/slider/slider2.jpg'
-  images[2] = 'img/slider/slider3.jpg'
-  images[3] = 'img/slider/slider4.jpg'
-  images[4] = 'img/slider/slider5.jpg'
-  images[5] = 'img/slider/slider6.jpg'
+  images[0] = 'img/slider/slider1.webp'
+  images[1] = 'img/slider/slider2.webp'
+  images[2] = 'img/slider/slider3.webp'
+  images[3] = 'img/slider/slider4.webp'
+  images[4] = 'img/slider/slider5.webp'
+  images[5] = 'img/slider/slider6.webp'
 
   const changePicture = () => {
     // header.style.backgroundImage = "url(" + images[i] + ")";
