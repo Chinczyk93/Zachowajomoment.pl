@@ -307,9 +307,11 @@ body {
     align-self: flex-start;
     padding-bottom: 1em;
     text-align: center;
-    font-family: $secondary-font;
+    // font-family: 'League Script', cursive;
     color: $main-color;
-    font-style: italic;
+    font-size: 3rem;
+
+    // font-style: italic;
     letter-spacing: 0.5px;
   }
 
@@ -652,10 +654,10 @@ body {
 //=================================================
 .offer {
   &__title {
-    margin: 2em 0;
+    margin: 5em 0 2em;
     text-align: center;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: $main-color;
   }
 
@@ -663,7 +665,8 @@ body {
     margin: 0 auto;
     max-width: 900px;
     text-align: justify;
-    letter-spacing: .5px;
+    letter-spacing: 1px;
+    line-height: 25px;
     color: $dark;
 
     &--bottom {
@@ -672,7 +675,7 @@ body {
     }
 
     &--margin {
-      margin-bottom: 1em;
+      margin-bottom: 1.5em;
     }
 
     &--center {
@@ -680,6 +683,8 @@ body {
     }
 
     &--mint {
+      font-size: 2rem;
+      font-weight: bold;
       color: $main-color;
     }
   }
@@ -692,6 +697,8 @@ body {
     margin: 2em 0 2em;
   }
 
+
+
   &__card {
     margin-top: 2em;
     text-align: center;
@@ -702,9 +709,16 @@ body {
     transition: transform .3s;
 
     &--voucher {
-      margin: 2em auto;
-      max-width: 330px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 5em auto;
+      max-width: 660px;
+      padding: 1em;
     }
+
+
 
     &:hover {
       transform: scale(1.1);
@@ -739,6 +753,16 @@ body {
     }
   }
 
+  &__img {
+    max-width: 300px;
+    padding: 1em;
+    margin-bottom: 2em;
+  }
+
+  &__voucher-text {
+    max-width: 300px;
+  }
+
   &__btn {
     margin: 2em auto 0;
     padding: 0.5em 5em;
@@ -750,6 +774,11 @@ body {
 
     &::before {
       background-color: $secondary-color;
+    }
+
+    &--wedding {
+      padding: 1em 6em;
+      font-size: 1.5rem;
     }
   }
 
@@ -793,6 +822,11 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: $main-color;
+
+    strong {
+      text-transform: lowercase;
+      font-weight: normal;
+    }
   }
 
   &__form-input {
@@ -829,7 +863,7 @@ body {
 
   &__text {
     color: $main-color;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
     letter-spacing: 0.5px;
     line-height: 50px;
@@ -855,6 +889,35 @@ body {
 //Media
 // ==================================
 @media(min-width: 768px) {
+  .offer {
+    &__title {
+      margin-top: 10em;
+    }
+
+    &__cards {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    &__card {
+      &--voucher {
+        flex-direction: row;
+        margin: 10em auto;
+      }
+    }
+
+    &__img {
+      margin-bottom: 0;
+
+    }
+
+    &__text--mint {
+      font-size: 2.2rem;
+    }
+  }
+
+
+
   .footer {
     &__boxes {
       display: flex;

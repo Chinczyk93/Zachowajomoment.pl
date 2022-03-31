@@ -28,22 +28,54 @@ const navItemsAnimations = () => {
 
 // slider header
 
+// let i = 0; 
+//   let images = [];
+//   const slideTime = 3000;
+//   const header = document.querySelector('.header');
+//   const image = document.querySelector('.slider');
+
+//   images[0] = 'img/slider/slider1.webp'
+//   images[1] = 'img/slider/slider2.webp'
+//   images[2] = 'img/slider/slider3.webp'
+//   images[3] = 'img/slider/slider4.webp'
+//   images[4] = 'img/slider/slider5.webp'
+//   images[5] = 'img/slider/slider6.webp'
+
+//   const changePicture = () => {
+//     // header.style.backgroundImage = "url(" + images[i] + ")";
+//     image.src = images[i];
+// i++;
+// //     if(i < images.length -1) {
+// //       i++;
+// // }
+// // else {
+// //   i = 0; 
+// // }
+// if(i === images.length){
+//   i = 0;
+// }
+// setTimeout(changePicture, slideTime);
+
+//   }
+// window.addEventListener('load', changePicture);
+
+////////////////////////////////
 let i = 0; 
   let images = [];
-  const slideTime = 10000;
+  const slideTime = 3000;
   const header = document.querySelector('.header');
   const image = document.querySelector('.slider');
 
-  images[0] = 'img/slider/slider1.webp'
-  images[1] = 'img/slider/slider2.webp'
-  images[2] = 'img/slider/slider3.webp'
-  images[3] = 'img/slider/slider4.webp'
-  images[4] = 'img/slider/slider5.webp'
-  images[5] = 'img/slider/slider6.webp'
+  images[0] = 'img/portfolio/sesja-okolicznosciowa/sesja-swiateczna-w-poznaniu/sesja-okolicznosciowa-swiateczna-w-poznaniu-460-307-00003.webp 460w, img/portfolio/sesja-okolicznosciowa/sesja-swiateczna-w-poznaniu/sesja-okolicznosciowa-swiateczna-w-poznaniu-1280-853-00003.webp 800w, img/slider/slider1.webp 1280w, img/slider/slider1.webp 1920w'
+  images[1] = 'img/portfolio/sesja-okolicznosciowa/sesja-swiateczna-w-poznaniu/sesja-okolicznosciowa-swiateczna-w-poznaniu-460-307-00004.webp 460w, img/portfolio/sesja-okolicznosciowa/sesja-swiateczna-w-poznaniu/sesja-okolicznosciowa-swiateczna-w-poznaniu-1280-853-00004.webp 800w, img/slider/slider2.webp 1280w, img/slider/slider2.webp 1920w'
+  images[2] = 'img/portfolio/sesja-okolicznosciowa/sesja-swiateczna-w-poznaniu/sesja-okolicznosciowa-swiateczna-w-poznaniu-460-307-00005.webp 460w, img/portfolio/sesja-okolicznosciowa/sesja-swiateczna-w-poznaniu/sesja-okolicznosciowa-swiateczna-w-poznaniu-1280-853-00005.webp 800w, img/slider/slider3.webp 1280w, img/slider/slider3.webp 1920w'
+  images[3] = 'img/portfolio/sesja-okolicznosciowa/sesja-swiateczna-w-poznaniu/sesja-okolicznosciowa-swiateczna-w-poznaniu-460-307-00006.webp 460w, img/portfolio/sesja-okolicznosciowa/sesja-swiateczna-w-poznaniu/sesja-okolicznosciowa-swiateczna-w-poznaniu-1280-853-00006.webp 800w, img/slider/slider4.webp 1280w, img/slider/slider4.webp 1920w'
+  images[4] = 'img/portfolio/sesja-okolicznosciowa/sesja-swiateczna-w-poznaniu/sesja-okolicznosciowa-swiateczna-w-poznaniu-460-307-00007.webp 460w, img/portfolio/sesja-okolicznosciowa/sesja-swiateczna-w-poznaniu/sesja-okolicznosciowa-swiateczna-w-poznaniu-1280-853-00007.webp 800w, img/slider/slider5.webp 1280w, img/slider/slider5.webp 1920w'
+  images[5] = 'img/portfolio/sesja-okolicznosciowa/sesja-swiateczna-w-poznaniu/sesja-okolicznosciowa-swiateczna-w-poznaniu-460-307-00008.webp 460w, img/portfolio/sesja-okolicznosciowa/sesja-swiateczna-w-poznaniu/sesja-okolicznosciowa-swiateczna-w-poznaniu-1280-853-00008.webp 800w, img/slider/slider6.webp 1280w, img/slider/slider6.webp 1920w'
 
   const changePicture = () => {
     // header.style.backgroundImage = "url(" + images[i] + ")";
-    image.src = images[i];
+    image.srcset = images[i];
 i++;
 //     if(i < images.length -1) {
 //       i++;
@@ -58,8 +90,7 @@ setTimeout(changePicture, slideTime);
 
   }
 window.addEventListener('load', changePicture);
-
-
+//////////////////////////////////////////
 
 
 

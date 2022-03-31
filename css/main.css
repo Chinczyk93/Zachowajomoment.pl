@@ -410,9 +410,8 @@ body {
       align-self: flex-start;
   padding-bottom: 1em;
   text-align: center;
-  font-family: "Old Standard TT", serif;
   color: #b2cfcb;
-  font-style: italic;
+  font-size: 3rem;
   letter-spacing: 0.5px;
 }
 
@@ -773,10 +772,10 @@ body {
 }
 
 .offer__title {
-  margin: 2em 0;
+  margin: 5em 0 2em;
   text-align: center;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #b2cfcb;
 }
 
@@ -784,7 +783,8 @@ body {
   margin: 0 auto;
   max-width: 900px;
   text-align: justify;
-  letter-spacing: .5px;
+  letter-spacing: 1px;
+  line-height: 25px;
   color: #2e2e2e;
 }
 
@@ -794,7 +794,7 @@ body {
 }
 
 .offer__text--margin {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 .offer__text--center {
@@ -802,6 +802,8 @@ body {
 }
 
 .offer__text--mint {
+  font-size: 2rem;
+  font-weight: bold;
   color: #b2cfcb;
 }
 
@@ -835,8 +837,22 @@ body {
 }
 
 .offer__card--voucher {
-  margin: 2em auto;
-  max-width: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5em auto;
+  max-width: 660px;
+  padding: 1em;
 }
 
 .offer__card:hover {
@@ -872,6 +888,16 @@ body {
   color: #b2cfcb;
 }
 
+.offer__img {
+  max-width: 300px;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+.offer__voucher-text {
+  max-width: 300px;
+}
+
 .offer__btn {
   margin: 2em auto 0;
   padding: 0.5em 5em;
@@ -884,6 +910,11 @@ body {
 
 .offer__btn::before {
   background-color: #88c0b8;
+}
+
+.offer__btn--wedding {
+  padding: 1em 6em;
+  font-size: 1.5rem;
 }
 
 .offer a {
@@ -927,6 +958,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   color: #b2cfcb;
+}
+
+.contact__form-label strong {
+  text-transform: lowercase;
+  font-weight: normal;
 }
 
 .contact__form-input {
@@ -983,7 +1019,7 @@ body {
 
 .contact__text {
   color: #b2cfcb;
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
   letter-spacing: 0.5px;
   line-height: 50px;
@@ -1003,6 +1039,26 @@ body {
 }
 
 @media (min-width: 768px) {
+  .offer__title {
+    margin-top: 10em;
+  }
+  .offer__cards {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .offer__card--voucher {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 10em auto;
+  }
+  .offer__img {
+    margin-bottom: 0;
+  }
+  .offer__text--mint {
+    font-size: 2.2rem;
+  }
   .footer__boxes {
     display: -webkit-box;
     display: -ms-flexbox;
