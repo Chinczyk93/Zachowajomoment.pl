@@ -437,7 +437,7 @@ body {
   }
 
   &__btn {
-    @include galleryBtn;
+    // @include galleryBtn;
     margin-top: calc(80% - 8px);
     padding: 0.5em;
     // text-transform: uppercase;
