@@ -542,7 +542,7 @@ body {
 }
 
 .gallery__btn {
-  margin-top: calc(50% - 8px);
+  margin-top: calc(80% - 8px);
   padding: 0.5em;
   background-color: #b2cfcb;
   color: #fff;
