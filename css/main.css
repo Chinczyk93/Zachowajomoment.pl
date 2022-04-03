@@ -472,6 +472,7 @@ body {
   height: 100%;
   background-position: center;
   background-size: cover;
+  opacity: 0.6;
   -webkit-box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
           box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
   /* border-radius: 15px; */
@@ -492,7 +493,7 @@ body {
 }
 
 .gallery__img--four {
-  background-image: url(../img/galeria-main/kobiece.webp);
+  background-image: url(../img/galeria-main/beauty.webp);
 }
 
 .gallery__img--five {
@@ -512,7 +513,7 @@ body {
 }
 
 .gallery__img--nine {
-  background-image: url(../img/galeria-main/beauty.webp);
+  background-image: url(../img/galeria-main/brzuszkowe.webp);
 }
 
 .gallery__text {
@@ -525,9 +526,7 @@ body {
   text-align: center;
   -webkit-transition: .8s;
   transition: .8s;
-  opacity: 0;
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+  opacity: 1;
   color: #2e2e2e;
   -webkit-box-shadow: 0 0 3px #b2cfcb;
           box-shadow: 0 0 3px #b2cfcb;
@@ -554,18 +553,6 @@ body {
 
 .gallery__btn::before {
   background-color: #88c0b8;
-}
-
-.gallery__card:hover .gallery__text {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-  opacity: 1;
-}
-
-.gallery__card:hover .gallery__img {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-  opacity: 0.2;
 }
 
 @media (max-width: 767px) {
@@ -1126,6 +1113,24 @@ body {
   .offer__card .title,
   .offer__card .price {
     font-size: 2rem;
+  }
+  .gallery__img {
+    opacity: 1;
+  }
+  .gallery__text {
+    opacity: 0;
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+  .gallery__card:hover .gallery__text {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+  .gallery__card:hover .gallery__img {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+    opacity: 0.2;
   }
 }
 /*# sourceMappingURL=main.css.map */
