@@ -389,6 +389,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 6em;
 }
 
 .about-me__box-img {
@@ -550,6 +551,12 @@ body {
   letter-spacing: 1px;
   cursor: pointer;
   margin-top: calc(80% - 8px);
+  padding: 0.5em;
+  background-color: #b2cfcb;
+  color: #fff;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .gallery__btn::before {
