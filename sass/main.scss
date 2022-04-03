@@ -877,7 +877,8 @@ body {
     font-size: 2rem;
     text-align: center;
     letter-spacing: 0.5px;
-    line-height: 50px;
+    // line-height: 50px;
+    padding-top: 2em;
 
     &--top {
       padding-top: 2em;
@@ -886,6 +887,18 @@ body {
     &--bottom {
       padding-top: 2em;
       line-height: 30px;
+    }
+  }
+
+  &__img {
+    padding: 6em 0;
+
+
+
+    img {
+      @include shadow;
+      height: 100%;
+      width: 100%;
     }
   }
 }

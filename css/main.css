@@ -1011,7 +1011,7 @@ body {
   font-size: 2rem;
   text-align: center;
   letter-spacing: 0.5px;
-  line-height: 50px;
+  padding-top: 2em;
 }
 
 .contact__text--top {
@@ -1021,6 +1021,17 @@ body {
 .contact__text--bottom {
   padding-top: 2em;
   line-height: 30px;
+}
+
+.contact__img {
+  padding: 6em 0;
+}
+
+.contact__img img {
+  -webkit-box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
+          box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
+  height: 100%;
+  width: 100%;
 }
 
 .thank {
