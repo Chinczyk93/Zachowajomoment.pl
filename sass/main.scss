@@ -684,7 +684,7 @@ body {
     }
 
     &--mint {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: bold;
       color: $main-color;
     }
@@ -767,6 +767,7 @@ body {
   &__btn {
     margin: 2em auto 0;
     padding: 0.5em 5em;
+    font-size: 1.6rem;
     color: $pure-white;
     border: none;
     background-color: $main-color;

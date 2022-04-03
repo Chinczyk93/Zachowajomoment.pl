@@ -789,7 +789,7 @@ body {
 }
 
 .offer__text--mint {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #b2cfcb;
 }
@@ -888,6 +888,7 @@ body {
 .offer__btn {
   margin: 2em auto 0;
   padding: 0.5em 5em;
+  font-size: 1.6rem;
   color: #fff;
   border: none;
   background-color: #b2cfcb;
