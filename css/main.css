@@ -549,6 +549,7 @@ body {
   border-radius: 8px;
   letter-spacing: 1px;
   cursor: pointer;
+  margin-top: calc(80% - 8px);
 }
 
 .gallery__btn::before {
