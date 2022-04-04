@@ -56,15 +56,17 @@
 
 
       <div class="contact__form-top">
-        <form class="contact__form" action="https://formsubmit.io/send/patryk.kortyla93@gmail.com" method="POST">
+        <form class="contact__form" action="https://formsubmit.io/send/kontakt@zachowajmoment.pl" method="POST">
           <label for="mail" class="contact__form-label">Adres email:</label>
-          <input type="text" class="contact__form-input" id="mail">
-          <label for="type" class="contact__form-label">Pakiet sesji <strong>(Premium/ Standard/ Mini):</strong></label>
-          <input type="text" class="contact__form-input" id="type">
+          <input type="mail" name="mail" class="contact__form-input" id="mail">
+          <label for="text" class="contact__form-label">Pakiet sesji <strong>(Premium/ Standard/ Mini):</strong></label>
+          <input type="text" name="text" class="contact__form-input" id="text">
           <label for="msg" class="contact__form-label">Zapytanie o Voucher <strong>(Imię i Nazwisko
               osoby obdarowanej, adres
-              wysyłki/odbiór osobisty Vouchera):</strong></label> <textarea id="msg" class="contact__form-textarea">
-              </textarea>
+              wysyłki/odbiór osobisty Vouchera):</strong></label> <textarea id="msg" name="msg"
+            class="contact__form-textarea"></textarea>
+          <input name="_redirect" type="hidden" id="name" value="https://zachowajmoment.pl/dziekuje.html">
+          <input name="_formsubmit_id" type="text" style="display:none">
           <input value="Wyślij" type="submit" class="contact__form-btn btn-special-animation"></button>
 
 
@@ -76,9 +78,7 @@
 
       </div>
 
-      <!-- <input name="_redirect" type="hidden" id="name" value="https://your website url">
-      <input name="_formsubmit_id" type="text" style="display:none"> -->
-      <!-- <button type="submit" class="contact__form-btn btn-special-animation">Wyślij</button> -->
+
       <div class="contact__img"><img src="dist/img/voucher/voucher-kontakt.webp" alt=""></div>
 
     </div>
