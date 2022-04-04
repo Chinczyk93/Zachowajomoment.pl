@@ -686,6 +686,10 @@ body {
 
     &--margin {
       margin-bottom: 1.5em;
+
+      &-top {
+        margin-top: 6em;
+      }
     }
 
     &--center {
@@ -936,7 +940,7 @@ body {
     }
 
     &__text--mint {
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
   }
 
