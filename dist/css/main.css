@@ -393,8 +393,14 @@ body {
 }
 
 .about-me__box-img {
-  height: 100%;
+  max-width: 400px;
+  max-height: 600px;
   margin: 0 auto 2em;
+}
+
+.about-me__box-img img {
+  max-width: 300px;
+  max-height: 500px;
 }
 
 .about-me__box-text {
