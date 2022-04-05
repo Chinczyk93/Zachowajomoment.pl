@@ -7,6 +7,9 @@ const navItemDesktop = document.querySelectorAll('.nav__item--desktop');
 const logo = document.querySelector(".logo__img")
 const allSections = document.querySelectorAll('.section');
 const footerYear = document.querySelector('.footer__year');
+const sectionBlur = document.querySelector('.blur__section');
+const cookieContainer = document.querySelector('.cookie');
+const cookieBtn = document.querySelector('.cookie__btn');
 
 const handleNav = () => {
   nav.classList.toggle('nav--active')
@@ -107,3 +110,16 @@ const handleObserver = () => {
   handleCurrentYear();
 
   window.addEventListener('scroll', handleObserver);
+
+cookieBtn.addEventListener("click", () => {
+  sectionBlur.classList.remove("blur");
+  cookieContainer.classList.remove("cookie__active");
+  localStorage.setItem("cookieBannerDisplayed", "true");
+});
+
+setTimeout(() => {
+  if (!localStorage.getItem("cookieBannerDisplayed")) {
+    cookieContainer.classList.add("cookie__active");
+    sectionBlur.classList.add("blur");
+  }
+}, 2000);

@@ -21,6 +21,8 @@ body {
   font-size: 1.6rem;
 }
 
+
+
 // Nav
 .logo {
   img {
@@ -265,6 +267,15 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.blur__section {
+  transition: 0.8s;
+}
+
+.blur {
+  filter: blur(5px);
+  transition: 1s;
 }
 
 
@@ -920,6 +931,43 @@ body {
     color: $main-color;
   }
 }
+
+// ==================================
+//Cookie
+// ==================================
+
+.cookie {
+  padding: 2em;
+  position: fixed;
+  bottom: -200px;
+  left: 0;
+  background-color: $pure-white;
+  transition: 0.4s;
+
+  &__link {
+    color: $main-color;
+    text-decoration: none;
+  }
+
+  &__btn {
+    position: relative;
+    margin-top: 2em;
+    top: 0;
+    left: calc(50vw - 10em);
+    padding: 0.5em 5em;
+    font-size: 1.6rem;
+    color: $pure-white;
+    border: none;
+    background-color: $main-color;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  &__active {
+    bottom: 0;
+  }
+}
+
 
 
 // ==================================

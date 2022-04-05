@@ -375,6 +375,18 @@ body {
           transform: translate(-50%, -50%);
 }
 
+.blur__section {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.blur {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .about-me__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1072,6 +1084,39 @@ body {
 .privacy__system {
   text-decoration: none;
   color: #b2cfcb;
+}
+
+.cookie {
+  padding: 2em;
+  position: fixed;
+  bottom: -200px;
+  left: 0;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.cookie__link {
+  color: #b2cfcb;
+  text-decoration: none;
+}
+
+.cookie__btn {
+  position: relative;
+  margin-top: 2em;
+  top: 0;
+  left: calc(50vw - 10em);
+  padding: 0.5em 5em;
+  font-size: 1.6rem;
+  color: #fff;
+  border: none;
+  background-color: #b2cfcb;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cookie__active {
+  bottom: 0;
 }
 
 @media (min-width: 768px) {
