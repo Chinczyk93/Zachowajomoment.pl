@@ -482,7 +482,6 @@ body {
   opacity: 0.6;
   -webkit-box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
           box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
-  /* border-radius: 15px; */
   -webkit-transition: .8s;
   transition: .8s;
 }

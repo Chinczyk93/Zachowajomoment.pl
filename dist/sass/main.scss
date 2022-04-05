@@ -250,16 +250,6 @@ body {
   animation: navItemsAnimations 1s both;
 }
 
-//header
-
-// .header {
-//   height: 100vh;
-//   background-image: url(../img/slider/slider1.jpg);
-//   background-size: cover;
-//   background-position: center;
-//   // transition: background-image 3s;
-//   margin: 0 auto;
-// }
 
 .header {
   position: relative;
@@ -315,11 +305,8 @@ body {
     align-self: flex-start;
     padding-bottom: 1em;
     text-align: center;
-    // font-family: 'League Script', cursive;
     color: $main-color;
     font-size: 3rem;
-
-    // font-style: italic;
     letter-spacing: 0.5px;
   }
 
@@ -378,7 +365,6 @@ body {
     background-size: cover;
     opacity: 0.6;
     @include shadow;
-    /* border-radius: 15px; */
     transition: .8s;
 
     &--one {
@@ -429,7 +415,6 @@ body {
     text-align: center;
     transition: .8s;
     opacity: 1;
-    // transform: rotateY(-180deg);
     color: $dark;
     box-shadow: 0 0 3px $main-color;
 
@@ -444,10 +429,8 @@ body {
   }
 
   &__btn {
-    // @include galleryBtn;
     margin-top: calc(80% - 8px);
     padding: 0.5em;
-    // text-transform: uppercase;
     background-color: $main-color;
     color: $pure-white;
     border-radius: 8px;
@@ -459,16 +442,6 @@ body {
     }
   }
 }
-
-// .gallery__card:hover .gallery__text {
-//   transform: rotate(0);
-//   opacity: 1;
-// }
-
-// .gallery__card:hover .gallery__img {
-//   transform: rotateY(-180deg);
-//   opacity: 0.2;
-// }
 
 //Reviews
 @media(max-width:767px) {
@@ -543,7 +516,6 @@ body {
     font-size: 1.4rem;
     margin: 0 auto;
     padding: 2em;
-    // text-align: center;
 
     &:first-child {
       flex-basis: 72%;
@@ -888,7 +860,6 @@ body {
     font-size: 2rem;
     text-align: center;
     letter-spacing: 0.5px;
-    // line-height: 50px;
     padding-top: 2em;
 
     &--top {
