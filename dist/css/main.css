@@ -1012,7 +1012,7 @@ body {
 .contact__form-btn {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding: 1em;
+  padding: 2em;
   width: 100%;
   max-width: 300px;
   color: #fff;
