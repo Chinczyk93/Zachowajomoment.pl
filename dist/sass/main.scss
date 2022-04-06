@@ -939,8 +939,9 @@ body {
 .cookie {
   padding: 2em;
   position: fixed;
-  bottom: -200px;
+  bottom: -400px;
   left: 0;
+  right: 0;
   background-color: $pure-white;
   transition: 0.4s;
 

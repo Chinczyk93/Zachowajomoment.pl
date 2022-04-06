@@ -1089,8 +1089,9 @@ body {
 .cookie {
   padding: 2em;
   position: fixed;
-  bottom: -200px;
+  bottom: -400px;
   left: 0;
+  right: 0;
   background-color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
