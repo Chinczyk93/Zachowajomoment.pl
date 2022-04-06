@@ -850,6 +850,7 @@ body {
   }
 
   &__form-btn {
+    -webkit-appearance: none;
     align-self: flex-end;
     width: 100%;
     height: 2em;

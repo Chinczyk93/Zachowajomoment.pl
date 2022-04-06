@@ -1010,6 +1010,7 @@ body {
 }
 
 .contact__form-btn {
+  -webkit-appearance: none;
   -ms-flex-item-align: end;
       align-self: flex-end;
   width: 100%;
