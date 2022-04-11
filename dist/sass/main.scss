@@ -1121,3 +1121,20 @@ body {
 
 
 }
+
+
+@media(min-width: 2000px) {
+  .logo {
+    img {
+      left: 25vw;
+    }
+  }
+}
+
+@media(min-width: 3000px) {
+  .logo {
+    img {
+      left: 30vw;
+    }
+  }
+}
