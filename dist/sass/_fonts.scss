@@ -1,91 +1,101 @@
-// @font-face {
-//   font-family: 'raleway thin_italic';
-//   src: url('../fonts/raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
-//     url('../fonts/raleway-italic-variablefont_wght-webfont.woff') format('woff');
-//   font-weight: 300;
-//   font-style: italic;
+@font-face {
+  font-family: 'raleway thin_italic';
+  src: url('../fonts/raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-italic-variablefont_wght-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
 
-// }
+}
 
-// @font-face {
-//   font-family: 'raleway thin';
-//   src: url('../fonts/raleway-variablefont_wght-webfont.woff') format('woff2'),
-//     url('../fonts/raleway-variablefont_wght-webfont.woff') format('woff');
-//   font-weight: 300;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'raleway thin';
+  src: url('../fonts/raleway-variablefont_wght-webfont.woff') format('woff2'),
+    url('../fonts/raleway-variablefont_wght-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
 
-// @font-face {
-//   font-family: 'raleway';
-//   src: url('../fonts/Raleway-Regular.ttf') format('ttf');
-//   font-weight: normal;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'raleway-normal';
+  src: url('../fonts/Raleway-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
-// @font-face {
-//   font-family: 'raleway';
-//   src: url('../fonts/Raleway-Light.ttf') format('ttf');
-//   font-weight: 300;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'raleway';
+  src: url('../fonts/Raleway-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 
-// @font-face {
-//   font-family: 'raleway bold';
-//   src: url('../fonts/Raleway-Bold.ttf') format('ttf');
-//   font-weight: bold;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'raleway bold';
+  src: url('../fonts/Raleway-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 
-// @font-face {
-//   font-family: 'raleway bold_italic';
-//   src: url('../fonts/Raleway-BoldItalic.ttf') format('ttf');
-//   font-weight: bold;
-//   font-style: italic;
-// }
-
-
-
-
-
-
-
-// @font-face {
-//   font-family: 'old standard bold';
-//   src: url('../fonts/oldstandardtt-bold-webfont.woff2') format('woff2'),
-//     url('../fonts/oldstandardtt-bold-webfont.woff') format('woff');
-//   font-weight: bold;
-//   font-style: normal;
-// }
-
-
-
-
-// @font-face {
-//   font-family: 'old standard italic';
-//   src: url('../fonts/oldstandardtt-italic-webfont.woff2') format('woff2'),
-//     url('../fonts/oldstandardtt-italic-webfont.woff') format('woff');
-//   font-weight: normal;
-//   font-style: italic;
-
-// }
-
-
-
-
-// @font-face {
-//   font-family: 'old standard';
-//   src: url('../fonts/oldstandardtt-regular-webfont.woff2') format('woff2'),
-//     url('../fonts/oldstandardtt-regular-webfont.woff') format('woff');
-//   font-weight: normal;
-//   font-style: normal;
-
-// }
+@font-face {
+  font-family: 'raleway bold_italic';
+  src: url('../fonts/Raleway-BoldItalic.ttf');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
 
 
 
 
 
-$main-font: 'Raleway',
+
+
+@font-face {
+  font-family: 'old standard bold';
+  src: url('../fonts/oldstandardtt-bold-webfont.woff2') format('woff2'),
+    url('../fonts/oldstandardtt-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+@font-face {
+  font-family: 'old standard italic';
+  src: url('../fonts/oldstandardtt-italic-webfont.woff2') format('woff2'),
+    url('../fonts/oldstandardtt-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'old standard';
+  src: url('../fonts/oldstandardtt-regular-webfont.woff2') format('woff2'),
+    url('../fonts/oldstandardtt-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
+$main-font: 'raleway',
+sans-serif;
+$main-font-normal: 'raleway',
 sans-serif;
 $main-font-bold: 'raleway bold',
 sans-serif;

@@ -316,6 +316,7 @@ body {
     align-self: flex-start;
     padding-bottom: 1em;
     text-align: center;
+    font-family: $secondary-font-italic;
     color: $main-color;
     font-size: 3rem;
     letter-spacing: 0.5px;
@@ -965,6 +966,11 @@ body {
     background-color: $main-color;
     border-radius: 8px;
     cursor: pointer;
+  }
+
+  &__text {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   &__active {
